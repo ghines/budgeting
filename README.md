@@ -4,7 +4,11 @@ Personal budget project for Codecademy
 
 ## Description
 
-This project is a simple personal budget management application built with Node.js and Express. It allows users to manage their budget by creating, updating, deleting, and transferring funds between different budget envelopes.
+This is currently a back-end for a simple personal budget management application built with Node.js and Express. It allows users to manage their budget by creating, updating, deleting, and transferring funds between different budget envelopes.
+This is a personal project that I want to continue working on to flesh out a full budget management app, some of the features to work on are:
+- Configurable database details
+- Web page user interface
+- Debt payoff analysis
 
 ## Features
 
@@ -16,6 +20,14 @@ This project is a simple personal budget management application built with Node.
 - Transfer funds between budget envelopes
 
 ## Installation
+
+This project requires a postgres database (personalbudget) to be installed or already installed. The information for the database is 
+user: "budget",
+password: "2025",
+host: "localhost",
+database: "personalbudget"
+If you want to change the defaults above, you'll need to change lines 8-11 in queries.js
+
 
 1. Clone the repository:
     ```sh
