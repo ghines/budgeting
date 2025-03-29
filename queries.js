@@ -37,12 +37,12 @@ const getEnvelope = (req, res) => {
 const createEnvelope = (req, res) => {
   pool.query(
     "INSERT INTO envelopes (name, balance) VALUES ($1, $2)",
-    [req.body.name, req.body.balance],
+    [req.body.env_name, req.body.balance],
     (error, results) => {
       if (error) {
         throw error;
       }
-      res.status(201).send(`Envelope ${req.body.name} added with ${req.body.balance}`);
+      res.status(201).send(`Envelope ${req.body.env_name} added with ${req.body.balance}`);
     }
   );
 };
