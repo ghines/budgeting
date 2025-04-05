@@ -24,27 +24,28 @@ const InputEnvelope = () => {
 
   return (
     <Fragment>
-      <h1 className="text-center my-5">Input Envelope</h1>
+      <h3 className="mt-5">Add New Envelope</h3>
       <form className="d-flex flex-column" onSubmit={onSubmitForm}>
         <div className="mb-2">
           <input
             type="text"
-            placeholder="add envelope"
+            placeholder="new envelope name"
             className="form-control"
             value={env_name}
             onChange={(e) => setDescription(e.target.value)}
           />
         </div>
-        <div className="mb-2">
+        <div className="mb-2 d-flex align-items-center">
           <input
             type="number"
             placeholder="Enter initial balance (in whole numbers, ie. 200"
-            className="form-control"
+            className="form-control me-2"
             value={balance}
             onChange={(e) => setBalance(e.target.value)} // Update amount state
           />
+          <button className="ml-5 btn btn-success w-50">Add</button>
         </div>
-        <button className="btn btn-success">Add</button>
+        
       </form>
       {responseMsg && (
         <div className="mt-5 text center">
