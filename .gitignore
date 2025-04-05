@@ -1,2 +1,8 @@
 node_modules/
 
+client/public/logo192.png
+.gitignore
+client/public/logo512.png
+client/public/favicon.ico
+basic_button_index.html
+
