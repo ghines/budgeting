@@ -10,7 +10,7 @@ const pool = new Pool({
   // host: "localhost",
   password: "u1HMeHSXRNGKrdJuZXUfjuw1C0NpLPkV",
   host: "dpg-d0012849c44c73fcbvs0-a",
-  database: "personalbudget",
+  database: "personalbudget_ch8b",
 });
 
 const getEnvelopes = (req, res) => {
