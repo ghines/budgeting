@@ -8,7 +8,7 @@ const ListEnvelopes = () => {
     // named with underscore to prevent conflict with query deleteEnvelope
     async function delete_Envelope(env_name) {
         try {
-            await fetch(`http://localhost:4000/api/envelopes/${env_name}`, {
+            await fetch(`http://budgeting-npct.onrender.com/api/envelopes/${env_name}`, {
                 method: "DELETE"
             });
             
@@ -19,7 +19,7 @@ const ListEnvelopes = () => {
     }
 
     async function getEnvelopes() {
-        const response = await fetch("http://localhost:4000/api/envelopes");
+        const response = await fetch("http://budgeting-npct.onrender.com/api/envelopes");
         const envArray = await response.json();
         //console.log(envArray);
 
