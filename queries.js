@@ -6,8 +6,10 @@ OR */
 const Pool = require("pg").Pool;
 const pool = new Pool({
   user: "budget",
-  password: "2025",
-  host: "localhost",
+  // password: "2025",
+  // host: "localhost",
+  password: "u1HMeHSXRNGKrdJuZXUfjuw1C0NpLPkV",
+  host: "dpg-d0012849c44c73fcbvs0-a",
   database: "personalbudget",
 });
 
