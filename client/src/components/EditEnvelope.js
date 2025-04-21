@@ -7,7 +7,7 @@ const EditEnvelope = ({ envelope }) => {
             //console.log(`name is ${name} -- Envelope name is ${envelope.name}`);
             const body = {name};
 
-            await fetch(`http://budgeting-npct.onrender.com/api/envelopes/${envelope.name}`, {
+            await fetch(`https://budgeting-npct.onrender.com/api/envelopes/${envelope.name}`, {
                 method: "PUT",
                 headers: { "Content-Type": "application/json"},
                 body: JSON.stringify(body)

@@ -9,7 +9,7 @@ const InputEnvelope = () => {
     e.preventDefault();
     try {
       const body = { env_name, balance };
-      const response = await fetch("http://budgeting-npct.onrender.com/api/envelopes", {
+      const response = await fetch("https://budgeting-npct.onrender.com/api/envelopes", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
