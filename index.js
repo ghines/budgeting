@@ -4,7 +4,8 @@ const app = express();
 const cors = require("cors");
 
 app.use(express.json());
-app.use(cors());
+//app.use(cors());
+app.use(cors({ origin: 'http://localhost:3000' }));
 
 // setting up the routes
 app.use("/api/envelopes", require("./routes/api/envelopes"));
