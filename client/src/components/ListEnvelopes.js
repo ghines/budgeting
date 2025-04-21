@@ -34,7 +34,7 @@ const ListEnvelopes = () => {
         <Fragment>
             {" "}
             <h2 className="text-center mt-5">List Envelopes </h2>
-            <table class="table mt-5">
+            <table className="table mt-5">
                 <thead>
                     <tr>
                         <th>Name</th>
