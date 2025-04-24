@@ -15,7 +15,8 @@ const InputEnvelope = () => {
         body: JSON.stringify(body),
       });
       const result = await response.text(); 
-      setResponseMsg(result || `Envelope ${env_name} added.`) 
+      setResponseMsg(result || `Envelope ${env_name} added.`)
+      //window.location = '/'; 
     } catch (err) {
       console.error(err.message);
       setResponseMsg(`Error! Error! Danger! "${env_name}" probably not added.`);
@@ -49,7 +50,7 @@ const InputEnvelope = () => {
       </form>
       {responseMsg && (
         <div className="mt-5 text center">
-            <h3>{responseMsg}</h3>
+            <h4>{responseMsg}</h4>
         </div>
       )}
     </Fragment>

@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 //const envelopes = require('../../Envelopes');
-const db = require('../../queries');
+const db = require('../../src/queries');
 
 // retrieve all envelopes
 router.get('/', db.getEnvelopes);

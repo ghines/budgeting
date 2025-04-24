@@ -9,7 +9,7 @@ app.use(cors({ origin: 'http://localhost:3000' }));
 
 
 // setting up the routes
-app.use("/api/envelopes", require("./routes/api/envelopes"));
+app.use("/api/envelopes", require("../routes/api/envelopes"));
 
 const PORT = process.env.PORT || 4000;
 
